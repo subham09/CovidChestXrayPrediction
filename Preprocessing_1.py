@@ -13,6 +13,7 @@ pneu = df[df['Labels'].str.contains("pneumonia", na=False)]
 normal = df[df['Labels'].str.contains("normal", na=False)]
 df1 = pd.concat([conso, infil, atel, ground, resp, pneu, normal])
 
+print("processing starting")
 for index, row in df1.iterrows():
     a = ""
     if row['Labels'].find("consolidation")!=-1:
