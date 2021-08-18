@@ -19,6 +19,7 @@ import cv2
 train = pd.read_csv('final_my_images_test.csv')
 
 train_image = []
+print("starting")
 count=0
 for i in range(train.shape[0]):#changing loop size to 10, train.shape[0]
     img = cv2.imread("D:\\notes\\model\\images\\"+train['imageid'][i])
